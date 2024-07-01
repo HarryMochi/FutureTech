@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech - Home</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 20px 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: black;
+            z-index: 1000;
+        }
+        .navbar a {
+            margin-left: 30px; /* Apply margin only to links in the navbar */
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin: auto;
+            background: white;
+            transition: width 0.5s ease;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        .title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+        .section p {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature {
+            background-color: #4b4b4b;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+        .feature img {
+            width: 100px;
+            height: 100px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+            margin-top: 40px;
+        }
+        .footer a {
+            margin: 0 10px; /* Adjust margin for footer links */
+        }
+        .small-screen-message {
+            display: none;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .content {
+                display: none;
+            }
+            .small-screen-message {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="logo.png" alt="Logo"> <strong>FutureTech</strong></div>
+        <div>
+            <a href="homepage.html">Home</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="innovations.html">Innovations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div><br>
+    
+    <div class="title content">
+        <h1>The Future</h1>
+        <img src="globe.png" alt="Globe">
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="section content">
+        <h2>Welcome to FutureTech</h2>
+        <p>At FutureTech, we are dedicated to exploring and creating the technologies of tomorrow. Join us on a journey into the future, where innovation knows no bounds.</p>
+    </div>
+
+    <div class="section features content">
+        <div class="feature">
+            <img src="vr.png" alt="Virtual Reality">
+            <h3>Virtual Reality</h3>
+            <p>Experience the future with immersive virtual reality technologies that redefine how we interact with the digital world.</p>
+        </div>
+        <div class="feature">
+            <img src="austronaut.png" alt="Space Exploration">
+            <h3>Space Exploration</h3>
+            <p>Join us as we explore the final frontier and push the boundaries of what is possible in space travel and colonization.</p>
+        </div>
+        <div class="feature">
+            <img src="nano.png" alt="Nanotechnology">
+            <h3>Nanotechnology</h3>
+            <p>Discover the potential of nanotechnology in revolutionizing medicine, electronics, and materials science.</p>
+        </div>
+        <div class="feature">
+            <img src="renewable.png" alt="Renewable Energy">
+            <h3>Renewable Energy</h3>
+            <p>Learn about the latest advancements in renewable energy and how they are shaping a sustainable future.</p>
+        </div>
+    </div>
+
+    <div class="footer content">
+        <p>&copy; 2024 FutureTech. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="use.html">Terms of Service</a></p>
+    </div>
+
+    <div class="small-screen-message">
+        <p>Unable to load on this screen. Try with your laptop.</p>
+    </div>
+</body>
+</html>

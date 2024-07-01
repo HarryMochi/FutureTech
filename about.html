@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech - About Us</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 20px 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: black;
+            z-index: 1000;
+        }
+        .navbar a {
+            margin-left: 30px; /* Apply margin only to links in the navbar */
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin: auto;
+            background: white;
+            transition: width 0.5s ease;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        .title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+        .section p {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+            margin-top: 40px;
+        }
+        .footer a {
+            margin: 0 10px; /* Adjust margin for footer links */
+        }
+        .team {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .team-member {
+            background-color: #4b4b4b;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="logo.png" alt="Logo"> <strong>FutureTech</strong></div>
+        <div>
+            <a href="homepage.html">Home</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="innovations.html">Innovations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <br>
+
+    <div class="title">
+        <h1>About Us</h1>
+    </div>
+    <br><br>
+
+    <div class="section">
+        <h2>Our Mission</h2>
+        <p>At FutureTech, our mission is to pioneer cutting-edge technologies that empower individuals and businesses to thrive in a rapidly changing world. We are committed to innovation, excellence, and sustainability in everything we do.</p>
+    </div>
+
+    <div class="section">
+        <h2>Our Vision</h2>
+        <p>We envision a future where technology seamlessly integrates into everyday life, enhancing human capabilities and fostering a more connected, efficient, and sustainable world.</p>
+    </div>
+
+    <div class="section">
+        <h2>Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="Icon.png" alt="CEO">
+                <h3>Jane Doe</h3>
+                <p>CEO</p>
+                <p>Jane leads FutureTech with a passion for innovation and a commitment to making the world a better place through technology.</p>
+            </div>
+            <div class="team-member">
+                <img src="Icon.png" alt="CTO">
+                <h3>John Smith</h3>
+                <p>CTO</p>
+                <p>John oversees all technical aspects of FutureTech, ensuring we stay at the forefront of technological advancements.</p>
+            </div>
+            <div class="team-member">
+                <img src="Icon.png" alt="CMO">
+                <h3>Mary Johnson</h3>
+                <p>CMO</p>
+                <p>Mary drives our marketing strategies, building strong relationships with our customers and partners worldwide.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FutureTech. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="use.html">Terms of Service</a></p>
+    </div>
+</body>
+</html>

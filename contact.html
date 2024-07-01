@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech - Contact</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 20px 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: black;
+            z-index: 1000;
+        }
+        .navbar a {
+            margin-left: 30px; /* Apply margin only to links in the navbar */
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin: auto;
+            background: white;
+            transition: width 0.5s ease;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+        }
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+        .section p {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature {
+            background-color: #4b4b4b;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            text-align: center;
+        }
+        .feature img {
+            width: 100px;
+            height: 100px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+            margin-top: 40px;
+        }
+        .footer a {
+            margin: 0 10px; /* Adjust margin for footer links */
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-form form {
+            background-color: #4b4b4b;
+            padding: 20px; /* Ensuring equal padding on all sides */
+            border-radius: 8px;
+            width: 50%;
+            text-align: left;
+        }
+        .contact-form label {
+            margin: 10px 0 5px 0;
+            display: block;
+            padding-left: 10px; /* Adding padding to ensure consistency */
+            padding-right: 10px; /* Adding padding to ensure consistency */
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: calc(100% - 20px); /* Subtracting padding from the total width */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px; /* Adding margin to ensure alignment */
+            margin-right: 10px; /* Adding margin to ensure alignment */
+        }
+        .contact-form button {
+            background-color: #4b4b4b;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            font-size: 1em;
+            background-color: #ffffff;
+            transition-duration: 0.3s;
+            margin-left: 18px;
+            margin-top: 30px;
+        }
+        .contact-form button:hover {
+            background-color: #3d3d3d;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="logo.png" alt="Logo"> <strong>FutureTech</strong></div>
+        <div>
+            <a href="homepage.html">Home</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="innovations.html">Innovations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div><br>
+    
+    <div class="title">
+        <h1>Contact Us</h1>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="section contact-form">
+        <form action="mailto:minhdavid.truong@gmail.com" method="post" enctype="text/plain">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FutureTech. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="use.html">Terms of Service</a></p>
+    </div>
+</body>
+</html>

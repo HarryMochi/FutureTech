@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech - Innovations</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 20px 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px; /* Added margin bottom to create space */
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: black;
+            z-index: 1000;
+        }
+        .navbar a {
+            margin-left: 30px; /* Apply margin only to links in the navbar */
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin: auto;
+            background: white;
+            transition: width 0.5s ease;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .title h1 {
+            font-size: 2.5em;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .section p {
+            text-align: justify;
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .innovations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .innovation {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .innovation h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .innovation p {
+            font-size: 1.1em;
+            margin-bottom: 15px; /* Increased bottom margin for better separation */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+            margin-top: 40px;
+        }
+        .footer a {
+            margin: 0 10px; /* Adjust margin for footer links */
+        }
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <strong>FutureTech</strong>
+        </div>
+        <div>
+            <a href="homepage.html">Home</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="innovations.html">Innovations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+    <br><br><br>
+    
+    <div class="title">
+        <h1>Innovations</h1>
+    </div>
+    
+    <div class="section">
+        <h2>Explore Our Latest Innovations</h2>
+        <p>Discover the cutting-edge innovations developed by FutureTech, pushing the boundaries of what's possible in technology.</p>
+    </div>
+
+    <div class="innovations">
+        <div class="innovation">
+            <h3>Augmented Reality Applications</h3>
+            <p>Our advancements in augmented reality are transforming industries such as education, gaming, and healthcare by integrating digital information into the user's environment in real time.</p>
+        </div>
+        <div class="innovation">
+            <h3>Internet of Things (IoT) Solutions</h3>
+            <p>Explore our IoT innovations that enable smart homes, cities, and industries to optimize operations and enhance efficiency through interconnected devices and sensors.</p>
+        </div>
+        <div class="innovation">
+            <h3>Advanced Robotics</h3>
+            <p>Discover our developments in robotics, ranging from autonomous vehicles and drones to industrial robots that revolutionize manufacturing and logistics with enhanced precision and automation.</p>
+        </div>
+        <div class="innovation">
+            <h3>Biomedical Engineering Breakthroughs</h3>
+            <p>Learn about our biomedical innovations that aim to improve human health and quality of life through advanced prosthetics, bioprinting, and medical imaging technologies.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FutureTech. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="use.html">Terms of Service</a></p>
+    </div>
+</body>
+</html>

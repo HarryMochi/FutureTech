@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureTech - Technologies</title>
+    <style>
+        body {
+            background-color: black;
+            padding: 20px 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid gray;
+            padding-bottom: 20px;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: black;
+            z-index: 1000;
+        }
+        .navbar a {
+            margin-left: 30px; /* Apply margin only to links in the navbar */
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            display: block;
+            margin: auto;
+            background: white;
+            transition: width 0.5s ease;
+            left: 0;
+            right: 0;
+            bottom: -5px;
+        }
+        a:hover::after {
+            width: 100%;
+        }
+        .title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 60px;
+        }
+        .logo {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 2em;
+        }
+        .section p {
+            text-align: center;
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .technologies {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .technology {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .technology h3 {
+            margin-bottom: 10px;
+            text-align: center; /* Align subtitles centered */
+        }
+        .technology p {
+            margin-bottom: 10px;
+            text-align: justify; /* Align paragraphs justified */
+        }
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #444;
+            margin-top: 40px;
+        }
+        .footer a {
+            margin: 0 10px; /* Adjust margin for footer links */
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="logo.png" alt="Logo"> <strong>FutureTech</strong></div>
+        <div>
+            <a href="homepage.html">Home</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="innovations.html">Innovations</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div><br>
+    
+    <div class="title">
+        <h1>Technologies</h1>
+        <img src="Tech_Explained_Dark_Data_Springwise.jpg" alt="Technologies">
+    </div>
+    <br><br><br><br>
+    <div class="section">
+        <h2>Explore Our Cutting-Edge Technologies</h2>
+        <p>At FutureTech, we are at the forefront of technological innovation. Explore the various groundbreaking technologies we are working on.</p>
+    </div>
+
+    <div class="section technologies">
+        <div class="technology">
+            <h3>Artificial Intelligence</h3>
+            <p>Our AI research is transforming industries by automating complex tasks, enhancing decision-making, and providing deep insights through data analysis.</p>
+        </div>
+        <div class="technology">
+            <h3>Blockchain</h3>
+            <p>We leverage blockchain technology to ensure secure, transparent, and decentralized transactions across various sectors.</p>
+        </div>
+        <div class="technology">
+            <h3>Quantum Computing</h3>
+            <p>Our work in quantum computing aims to solve problems that are currently intractable for classical computers, opening up new possibilities in cryptography, materials science, and more.</p>
+        </div>
+        <div class="technology">
+            <h3>Biotechnology</h3>
+            <p>We are pioneering advancements in biotechnology to improve healthcare, agriculture, and environmental sustainability through genetic engineering and molecular biology.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 FutureTech. All rights reserved.</p>
+        <p><a href="privacy.html">Privacy Policy</a> | <a href="use.html">Terms of Service</a></p>
+    </div>
+</body>
+</html>
